@@ -71,7 +71,7 @@ h6 {
 
 nav,
 .dropdown-menu {
-  background-color: var(--bs-primary);
+  background-color: var(--bs-primary-bg-subtle);
 }
 
 nav a,
@@ -93,16 +93,24 @@ nav a,
   --bs-btn-active-border-color: #7a8764;
 }
 
+/* Make dropdown use your floral palette */
+.dropdown-menu {
+  --bs-dropdown-bg: var(--bs-light);
+  --bs-dropdown-border-color: var(--bs-primary-border-subtle);
+  --bs-dropdown-link-color: var(--bs-dark);
+  --bs-dropdown-link-hover-color: var(--bs-dark);
+  --bs-dropdown-link-hover-bg: rgba(var(--bs-primary-rgb), .12);
+  --bs-dropdown-link-active-color: #fff;
+  --bs-dropdown-link-active-bg: var(--bs-primary);          
+  --bs-dropdown-link-disabled-color: #adb5bd;
+}
+
 #myCarousel img {
   max-height: 700px;
   object-fit: cover;
   width: 100%;
 }
 
-.carousel-caption p {
-  color: var(--bs-dark);
-}
-
-svg {
-  color: var(--bs-primary);
+footer {
+  background-color: var(--bs-primary-bg-subtle);
 }
