@@ -1,0 +1,108 @@
+/* Override Bootstrap's default colors */
+:root {
+  /* HEX main brand colors */
+  --bs-primary: #a3b18a;
+  --bs-secondary: #f4c2c2;
+  --bs-light: #faf9f6;
+  --bs-dark: #333333;
+  --bs-warning: #ffd97d;
+  --bs-info: #cbaacb;
+
+  /* RGB (Bootstrap uses these for bg/text utilities) */
+  --bs-primary-rgb: 163, 177, 138;
+  --bs-secondary-rgb: 244, 194, 194;
+  --bs-dark-rgb: 51, 51, 51;
+  --bs-warning-rgb: 255, 217, 125;
+  --bs-info-rgb: 203, 170, 203;
+
+  /* Subtle background colors */
+  --bs-primary-bg-subtle: #e8ede1; /* soft tint of primary */
+  --bs-secondary-bg-subtle: #fbecec; /* soft tint of secondary */
+  --bs-light-bg-subtle: #ffffff; /* lighter than light */
+  --bs-dark-bg-subtle: #e5e5e5; /* soft grey */
+  --bs-warning-bg-subtle: #fff7e0; /* soft tint of warning */
+  --bs-info-bg-subtle: #f5eef5; /* soft tint of info */
+
+  /* Text emphasis colors */
+  --bs-primary-text-emphasis: #6b7758;
+  --bs-secondary-text-emphasis: #a27d7d;
+  --bs-light-text-emphasis: #6c757d;
+  --bs-dark-text-emphasis: #1a1a1a;
+  --bs-warning-text-emphasis: #b38600;
+  --bs-info-text-emphasis: #7d5e7d;
+
+  /* Button active/focus colors */
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: #8f9e78; /* darker shade for hover */
+  --bs-btn-hover-border-color: #8f9e78;
+  --bs-btn-active-bg: #7a8764; /* darker for active click */
+  --bs-btn-active-border-color: #7a8764;
+  --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
+}
+
+.monomakh-regular {
+  font-family: "Monomakh", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.amaranth-regular {
+  font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+  font-family: "Amaranth", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--bs-primary);
+  font-family: "Monomakh", system-ui;
+}
+
+nav,
+.dropdown-menu {
+  background-color: var(--bs-primary);
+}
+
+nav a,
+.dropdown-menu {
+  text-align: center;
+}
+
+/* Buttons */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #a3b18a;
+  --bs-btn-border-color: #a3b18a;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #8f9e78;
+  --bs-btn-hover-border-color: #8f9e78;
+  --bs-btn-focus-shadow-rgb: 163, 177, 138;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #7a8764;
+  --bs-btn-active-border-color: #7a8764;
+}
+
+#myCarousel img {
+  max-height: 700px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-caption p {
+  color: var(--bs-dark);
+}
+
+svg {
+  color: var(--bs-primary);
+}
