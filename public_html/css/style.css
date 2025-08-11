@@ -8,7 +8,7 @@
   --bs-warning: #ffd97d;
   --bs-info: #cbaacb;
 
-  /* RGB (Bootstrap uses these for bg/text utilities) */
+  /* RGB main brand colors */
   --bs-primary-rgb: 163, 177, 138;
   --bs-secondary-rgb: 244, 194, 194;
   --bs-dark-rgb: 51, 51, 51;
@@ -16,12 +16,12 @@
   --bs-info-rgb: 203, 170, 203;
 
   /* Subtle background colors */
-  --bs-primary-bg-subtle: #e8ede1; /* soft tint of primary */
-  --bs-secondary-bg-subtle: #fbecec; /* soft tint of secondary */
-  --bs-light-bg-subtle: #ffffff; /* lighter than light */
-  --bs-dark-bg-subtle: #e5e5e5; /* soft grey */
-  --bs-warning-bg-subtle: #fff7e0; /* soft tint of warning */
-  --bs-info-bg-subtle: #f5eef5; /* soft tint of info */
+  --bs-primary-bg-subtle: #e8ede1;
+  --bs-secondary-bg-subtle: #fbecec;
+  --bs-light-bg-subtle: #ffffff;
+  --bs-dark-bg-subtle: #e5e5e5;
+  --bs-warning-bg-subtle: #fff7e0;
+  --bs-info-bg-subtle: #f5eef5;
 
   /* Text emphasis colors */
   --bs-primary-text-emphasis: #6b7758;
@@ -34,43 +34,32 @@
   /* Button active/focus colors */
   --bs-btn-bg: var(--bs-primary);
   --bs-btn-border-color: var(--bs-primary);
-  --bs-btn-hover-bg: #8f9e78; /* darker shade for hover */
+  --bs-btn-hover-bg: #8f9e78;
   --bs-btn-hover-border-color: #8f9e78;
-  --bs-btn-active-bg: #7a8764; /* darker for active click */
+  --bs-btn-active-bg: #7a8764;
   --bs-btn-active-border-color: #7a8764;
   --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
 
   /* Base link color */
   --bs-link-color: var(--bs-primary);
-  --bs-link-color-rgb: 163, 177, 138; /* Sage green */
+  --bs-link-color-rgb: 163, 177, 138;
 
   /* Hover link color */
-  --bs-link-hover-color: #7d8f6e; /* Slightly darker sage */
+  --bs-link-hover-color: #7d8f6e;
   --bs-link-hover-color-rgb: 125, 143, 110;
 
-  /* Override focus ring color */
-  --bs-focus-ring-color: rgba(var(--bs-primary-rgb), 0.25); /* 25% opacity */
-  
+  /* Focus ring color */
+  --bs-focus-ring-color: rgba(var(--bs-primary-rgb), 0.25);
 }
 
-.monomakh-regular {
-  font-family: "Monomakh", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.amaranth-regular {
-  font-family: "Amaranth", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
+/* General styles */
 body {
   background-color: var(--bs-light);
   color: var(--bs-dark);
   font-family: "Amaranth", sans-serif;
 }
 
+/* Heading styles */
 h1,
 h2,
 h3,
@@ -81,14 +70,22 @@ h6 {
   font-family: "Monomakh", system-ui;
 }
 
+/* Navbar styles */
 nav,
 .dropdown-menu {
   background-color: var(--bs-primary-bg-subtle);
 }
 
-nav a,
+/* Dropdown menu styles */
 .dropdown-menu {
-  text-align: center;
+  --bs-dropdown-bg: var(--bs-light);
+  --bs-dropdown-border-color: var(--bs-primary-border-subtle);
+  --bs-dropdown-link-color: var(--bs-dark);
+  --bs-dropdown-link-hover-color: var(--bs-dark);
+  --bs-dropdown-link-hover-bg: rgba(var(--bs-primary-rgb), 0.12);
+  --bs-dropdown-link-active-color: #fff;
+  --bs-dropdown-link-active-bg: var(--bs-primary);
+  --bs-dropdown-link-disabled-color: #adb5bd;
 }
 
 /* Buttons */
@@ -105,18 +102,7 @@ nav a,
   --bs-btn-active-border-color: #7a8764;
 }
 
-/* Make dropdown use your floral palette */
-.dropdown-menu {
-  --bs-dropdown-bg: var(--bs-light);
-  --bs-dropdown-border-color: var(--bs-primary-border-subtle);
-  --bs-dropdown-link-color: var(--bs-dark);
-  --bs-dropdown-link-hover-color: var(--bs-dark);
-  --bs-dropdown-link-hover-bg: rgba(var(--bs-primary-rgb), 0.12);
-  --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: var(--bs-primary);
-  --bs-dropdown-link-disabled-color: #adb5bd;
-}
-
+/* Carousel images */
 #myCarousel img,
 #header-pic img {
   max-height: 700px;
@@ -124,26 +110,28 @@ nav a,
   width: 100%;
 }
 
+/* Footer styles */
 footer {
   background-color: var(--bs-primary-bg-subtle);
 }
 
-/* Native = your primary (sage) */
-.badge-native{
+/* Badge styles */
+/* Native badge */
+.badge-native {
   background-color: var(--bs-primary-bg-subtle);
   color: var(--bs-primary-text-emphasis);
   border-color: var(--bs-primary-border-subtle);
 }
 
-/* Seasonal = warm accent (gold) */
-.badge-seasonal{
+/* Seasonal badge */
+.badge-seasonal {
   background-color: var(--bs-warning-bg-subtle);
   color: var(--bs-warning-text-emphasis);
   border-color: var(--bs-warning-border-subtle);
 }
 
-/* All-Year = neutral secondary */
-.badge-all-year{
+/* All-Year badge */
+.badge-all-year {
   background-color: var(--bs-secondary-bg-subtle);
   color: var(--bs-secondary-text-emphasis);
   border-color: var(--bs-secondary-border-subtle);
