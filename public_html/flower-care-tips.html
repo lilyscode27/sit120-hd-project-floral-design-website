@@ -3,22 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
 
+    <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,7 +33,9 @@
       rel="stylesheet"
     />
 
+    <!--Custom style sheet-->
     <link rel="stylesheet" href="css/style.css" />
+
     <title>Floral Design Website</title>
   </head>
 
@@ -51,7 +56,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <ul class="navbar-nav me-auto">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="home.html"
                   >Home</a
@@ -106,7 +111,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle active"
+                  class="nav-link dropdown-toggle"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -115,11 +120,6 @@
                   Help & Info
                 </a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="how-it-works.html"
-                      >How It Works</a
-                    >
-                  </li>
                   <li>
                     <a class="dropdown-item" href="faq.html">FAQ</a>
                   </li>
@@ -137,27 +137,27 @@
             </ul>
             <form class="d-flex" role="search">
               <input
-                class="form-control me-2"
+                class="form-control focus-ring me-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
+              <button class="btn btn-primary" type="submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
     </header>
+
     <main>
+      <!--Flower Care Tips-->
       <section id="flower-care-tips" class="py-5 mt-5">
         <div class="container">
-          <!-- Section Intro -->
+          <!-- Section Heading -->
           <div class="row justify-content-center text-center mb-4">
             <div class="col-lg-8 col-xl-7">
               <span class="text-muted">Helpful Advice</span>
-              <h1 class="display-1 fw-bold">Flower Care Tips</h1>
+              <h1 class="display-1">Flower Care Tips</h1>
               <p class="lead">
                 Keep your blooms fresh and beautiful for longer with these
                 expert tips, visual guides, and resources.
@@ -165,7 +165,7 @@
             </div>
           </div>
 
-          <!-- Main Tips with Icons -->
+          <!--Tips-->
           <div class="row g-4 mb-5">
             <div class="col-md-6 col-lg-4">
               <div class="card h-100 p-4 border-0 shadow-sm">
@@ -205,7 +205,7 @@
             </div>
           </div>
 
-          <!-- Common Problems with Images -->
+          <!--Common Problems-->
           <div class="mb-5">
             <h4 class="fw-bold mb-3">Common Flower Problems</h4>
             <div class="row g-4">
@@ -270,6 +270,7 @@
         </div>
       </section>
     </main>
+
     <footer class="py-4">
       <div class="container">
         <div class="d-lg-flex justify-content-between py-3 py-lg-2">
