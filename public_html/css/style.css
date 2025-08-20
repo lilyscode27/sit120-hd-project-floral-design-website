@@ -56,7 +56,8 @@
 body {
   background-color: var(--bs-light);
   color: var(--bs-dark);
-  font-family: "Amaranth", sans-serif;
+  /* font-family: "Amaranth", sans-serif; */
+  font-family: "Playfair Display", serif;
 }
 
 /* Heading styles */
@@ -67,7 +68,7 @@ h4,
 h5,
 h6 {
   color: var(--bs-primary);
-  font-family: "Monomakh", system-ui;
+  /* font-family: "Monomakh", system-ui; */
 }
 
 /* Navbar styles */
