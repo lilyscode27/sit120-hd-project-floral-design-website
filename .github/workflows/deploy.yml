@@ -2,11 +2,11 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: write  # required to push to gh-pages
+  contents: write # required to push to gh-pages
 
 jobs:
   deploy:
@@ -20,12 +20,12 @@ jobs:
       - name: Ensure index.html exists (redirect to home.html if missing)
         run: |
           if [ -f public_html/home.html ] && [ ! -f public_html/index.html ]; then
-            cat > public_html/index.html <<'HTML'
-            <!doctype html>
-            <meta charset="utf-8">
-            <meta http-equiv="refresh" content="0; url=home.html">
-            <link rel="canonical" href="home.html">
-            HTML
+            printf '%s\n' \
+              '<!doctype html>' \
+              '<meta charset="utf-8">' \
+              '<meta http-equiv="refresh" content="0; url=home.html">' \
+              '<link rel="canonical" href="home.html">' \
+              > public_html/index.html
           fi
 
       # If you have a CNAME file, place it in public_html/CNAME
@@ -36,5 +36,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: public_html
           publish_branch: gh-pages
-          force_orphan: true   # clean history for Pages (optional)
+          force_orphan: true # clean history for Pages (optional)
           # keep_files: false  # default; set true if you want to keep old files
