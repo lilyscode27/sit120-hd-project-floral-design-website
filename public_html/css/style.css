@@ -103,6 +103,11 @@ nav,
   --bs-btn-active-border-color: #32432d;
 }
 
+/* Accordion buttons */
+.accordion-button:focus {
+  box-shadow: none;
+}
+
 /* Carousel images */
 #myCarousel img,
 #header-pic img {
