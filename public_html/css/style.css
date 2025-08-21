@@ -111,9 +111,16 @@ nav,
 /* Carousel images */
 #myCarousel img,
 #header-pic img {
-  max-height: 700px;
+  height: 500px;
   object-fit: cover;
   width: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #333; /* dark color */
+  border-radius: 50%;
+  opacity: 0.85;
 }
 
 /* Footer styles */
