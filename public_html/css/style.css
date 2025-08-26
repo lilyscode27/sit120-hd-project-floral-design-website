@@ -56,7 +56,6 @@
 body {
   background-color: var(--bs-light);
   color: var(--bs-dark);
-  /* font-family: "Amaranth", sans-serif; */
   font-family: "Playfair Display", serif;
 }
 
@@ -68,7 +67,6 @@ h4,
 h5,
 h6 {
   color: var(--bs-primary);
-  /* font-family: "Monomakh", system-ui; */
 }
 
 /* Navbar styles */
@@ -108,17 +106,21 @@ nav,
   box-shadow: none;
 }
 
+/* Image styles */
+img {
+  object-fit: cover;
+}
+
 /* Carousel images */
 #myCarousel img,
 #header-pic img {
   height: 500px;
-  object-fit: cover;
   width: 100%;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #333; /* dark color */
+  background-color: #333;
   border-radius: 50%;
   opacity: 0.85;
 }
