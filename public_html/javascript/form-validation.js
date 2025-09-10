@@ -23,11 +23,15 @@ function validation() {
     auPhone.test(phone) ? "" : "Invalid phone number"
   );
 
-  // Email: Must not be empty and must have the @ symbol
+  // Email: Must not be empty and must be in a valid format
   const email = document.getElementById("email").value;
   const emailMsg = document.getElementById("emailMsg");
-  const hasAt = email.includes("@"); // Check if email has the @ symbol
-  setMsg(emailMsg, hasAt, hasAt ? "" : email + " Invalid email address");
+  const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/; // Valid email regex
+  setMsg(
+    emailMsg,
+    emailPattern.test(email),
+    emailPattern.test(email) ? "" : email + " Invalid email address"
+  );
 
   // Address: Must not be empty
   const address = document.getElementById("address").value;
