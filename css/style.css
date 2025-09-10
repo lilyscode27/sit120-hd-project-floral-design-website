@@ -1,0 +1,176 @@
+/* Override Bootstrap's default colors */
+:root {
+  /* HEX main brand colors */
+  --bs-primary: #4b6043;
+  --bs-secondary: #f4c2c2;
+  --bs-light: #faf9f6;
+  --bs-dark: #333333;
+  --bs-warning: #ffd97d;
+  --bs-info: #cbaacb;
+
+  /* RGB main brand colors */
+  --bs-primary-rgb: 75, 96, 67;
+  --bs-secondary-rgb: 244, 194, 194;
+  --bs-dark-rgb: 51, 51, 51;
+  --bs-warning-rgb: 255, 217, 125;
+  --bs-info-rgb: 203, 170, 203;
+
+  /* Subtle background colors */
+  --bs-primary-bg-subtle: #e5e9e3;
+  --bs-secondary-bg-subtle: #fbecec;
+  --bs-light-bg-subtle: #ffffff;
+  --bs-dark-bg-subtle: #e5e5e5;
+  --bs-warning-bg-subtle: #fff7e0;
+  --bs-info-bg-subtle: #f5eef5;
+
+  /* Text emphasis colors */
+  --bs-primary-text-emphasis: #36422f;
+  --bs-secondary-text-emphasis: #a27d7d;
+  --bs-light-text-emphasis: #6c757d;
+  --bs-dark-text-emphasis: #1a1a1a;
+  --bs-warning-text-emphasis: #b38600;
+  --bs-info-text-emphasis: #7d5e7d;
+
+  /* Button active/focus colors */
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: #3e5237;
+  --bs-btn-hover-border-color: #3e5237;
+  --bs-btn-active-bg: #32432d;
+  --bs-btn-active-border-color: #32432d;
+  --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
+
+  /* Base link color */
+  --bs-link-color: var(--bs-primary);
+  --bs-link-color-rgb: 75, 96, 67;
+
+  /* Hover link color */
+  --bs-link-hover-color: #3e5237;
+  --bs-link-hover-color-rgb: 62, 82, 55;
+
+  /* Focus ring color */
+  --bs-focus-ring-color: rgba(var(--bs-primary-rgb), 0.25);
+}
+
+/* General styles */
+body {
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+  font-family: "Playfair Display", serif;
+}
+
+/* Heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--bs-primary);
+}
+
+/* Navbar styles */
+nav,
+.dropdown-menu {
+  background-color: var(--bs-primary-bg-subtle);
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  --bs-dropdown-bg: var(--bs-light);
+  --bs-dropdown-border-color: var(--bs-primary-border-subtle);
+  --bs-dropdown-link-color: var(--bs-dark);
+  --bs-dropdown-link-hover-color: var(--bs-dark);
+  --bs-dropdown-link-hover-bg: rgba(var(--bs-primary-rgb), 0.12);
+  --bs-dropdown-link-active-color: #fff;
+  --bs-dropdown-link-active-bg: var(--bs-primary);
+  --bs-dropdown-link-disabled-color: #adb5bd;
+}
+
+/* Buttons */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #4b6043;
+  --bs-btn-border-color: #4b6043;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #3e5237;
+  --bs-btn-hover-border-color: #3e5237;
+  --bs-btn-focus-shadow-rgb: 75, 96, 67;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #32432d;
+  --bs-btn-active-border-color: #32432d;
+}
+
+/* Accordion buttons */
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/* Image styles */
+img {
+  object-fit: cover;
+}
+
+/* Carousel images */
+#myCarousel img,
+#header-pic img {
+  height: 500px;
+  width: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #333;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--bs-primary-bg-subtle);
+}
+
+/* Badge styles */
+/* Native badge */
+.badge-native {
+  background-color: var(--bs-primary-bg-subtle);
+  color: var(--bs-primary-text-emphasis);
+  border-color: var(--bs-primary-border-subtle);
+}
+
+/* Seasonal badge */
+.badge-seasonal {
+  background-color: var(--bs-warning-bg-subtle);
+  color: var(--bs-warning-text-emphasis);
+  border-color: var(--bs-warning-border-subtle);
+}
+
+/* All-Year badge */
+.badge-all-year {
+  background-color: var(--bs-secondary-bg-subtle);
+  color: var(--bs-secondary-text-emphasis);
+  border-color: var(--bs-secondary-border-subtle);
+}
+
+/* Form styles */
+
+/* Make the selected style-card invert to white text */
+form .btn-check:checked + .btn.card {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  color: #fff !important; /* parent text */
+}
+
+/* Force children that use Bootstrap text utilities to flip too */
+form .btn-check:checked + .btn.card .text-body-secondary,
+.btn-check:checked + .btn.card .text-muted,
+.btn-check:checked + .btn.card h6,
+.btn-check:checked + .btn.card p {
+  color: #fff !important;
+}
+
+/* Hover effect for unselected cards so users know they’re clickable */
+form .btn.card:hover {
+  background-color: rgba(var(--bs-primary-rgb), 0.06);
+  border-color: rgba(var(--bs-primary-rgb), 0.25);
+}

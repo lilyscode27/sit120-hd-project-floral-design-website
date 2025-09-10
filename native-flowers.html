@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Custom style sheet-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Native Flowers</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">Flora Inspiration</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Flower Catalogue
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="all-flowers.html"
+                      >All Flowers</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="seasonal-flowers.html"
+                      >Seasonal Flowers</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="native-flowers.html"
+                      >Native Flowers</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="flowers-by-occasion.html"
+                      >Flowers by Occasion</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="floral-designs.html"
+                  >Floral Designs</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="request.html">Make a Request</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Help & Info
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="faq.html">FAQ</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="flower-care-tips.html"
+                      >Flower Care Tips</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control focus-ring me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--Native Flowers-->
+      <section id="native-flowers" class="py-5 mt-5">
+        <div class="container">
+          <div class="row justify-content-between align-items-end mb-4">
+            <!--Section heading-->
+            <div class="col-lg-8">
+              <span class="text-muted">Our Collection</span>
+              <h2 class="display-3 m-0">Native Flowers</h2>
+              <p class="lead mb-0">
+                Browse our curated selection of blooms with their symbolic
+                meanings.
+              </p>
+            </div>
+            <!--Search bar-->
+            <div class="col-lg-4 mt-3 mt-lg-0">
+              <div class="input-group">
+                <input
+                  type="search"
+                  class="form-control focus-ring"
+                  placeholder="Search flowers…"
+                  aria-label="Search flowers"
+                />
+                <button class="btn btn-primary" type="button">Search</button>
+              </div>
+            </div>
+          </div>
+
+          <!--Flower list-->
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="images/flower_images/waratah.png"
+                  class="card-img-top"
+                  alt="Waratah"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mb-1">Waratah</h5>
+                  <p class="card-text text-body-secondary mb-3">
+                    Native to Australia, symbolizes strength, courage, and
+                    beauty; often used as a national symbol.
+                  </p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge badge-native">Native</span>
+                    <span class="badge badge-seasonal">Seasonal</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="images/flower_images/protea.webp"
+                  class="card-img-top"
+                  alt="Protea"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mb-1">Protea</h5>
+                  <p class="card-text text-body-secondary mb-3">
+                    Represents change, transformation, and diversity; often seen
+                    in South African culture.
+                  </p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge badge-native">Native</span>
+                    <span class="badge badge-seasonal">Seasonal</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="images/flower_images/grevillea.jpg"
+                  class="card-img-top"
+                  alt="Grevillea"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mb-1">Grevillea</h5>
+                  <p class="card-text text-body-secondary mb-3">
+                    Native Australian flower, symbolizes adaptability and
+                    resilience; attracts birds with its nectar.
+                  </p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge badge-native">Native</span>
+                    <span class="badge badge-all-year">All-Year</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="images/flower_images/flowering-gum.jpg"
+                  class="card-img-top"
+                  alt="Flowering Gum"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mb-1">Flowering Gum</h5>
+                  <p class="card-text text-body-secondary mb-3">
+                    Native Australian, symbolizes beauty and resilience; often
+                    linked to strength and vitality.
+                  </p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge badge-native">Native</span>
+                    <span class="badge badge-all-year">All-Year</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="images/flower_images/gum-nut.webp"
+                  class="card-img-top"
+                  alt="Gum Nut"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mb-1">Gum Nut</h5>
+                  <p class="card-text text-body-secondary mb-3">
+                    Symbolizes Australian wildlife, particularly the native
+                    eucalyptus trees, representing strength and endurance.
+                  </p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge badge-native">Native</span>
+                    <span class="badge badge-all-year">All-Year</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="images/flower_images/eucalyptus.webp"
+                  class="card-img-top"
+                  alt="Eucalyptus"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mb-1">Eucalyptus</h5>
+                  <p class="card-text text-body-secondary mb-3">
+                    Symbolizes protection and healing; known for its medicinal
+                    uses and aroma.
+                  </p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge badge-native">Native</span>
+                    <span class="badge badge-all-year">All-Year</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="py-4">
+      <div class="container">
+        <div class="d-lg-flex justify-content-between py-3 py-lg-2">
+          <div class="small mb-2 mb-lg-0">
+            <p class="text-muted mb-0 me-5">
+              © 2025 Flora Inspiration. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
